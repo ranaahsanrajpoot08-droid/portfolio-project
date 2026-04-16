@@ -19,7 +19,7 @@ export default function Nav() {
   return (
     <>
       <nav className={scrolled ? 'scrolled' : ''}>
-        <div className="logo" onClick={() => go('home')}>YN<em>.</em></div>
+        <div className="logo" onClick={() => go('home')}>AHSAN<em>.</em></div>
 
         <ul className="nav-links">
           {['home', 'about', 'skills', 'projects', 'contact'].map(s => (
