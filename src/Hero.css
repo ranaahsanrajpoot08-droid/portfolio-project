@@ -1,0 +1,59 @@
+.hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; padding: 5rem 2rem;
+}
+.hero-inner {
+  position: relative; z-index: 2;
+  max-width: 760px; margin: 0 auto; text-align: center;
+}
+.badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: rgba(0,229,160,.07); border: 1px solid rgba(0,229,160,.2);
+  border-radius: 2rem; padding: 0.32rem 0.9rem;
+  font-size: 0.72rem; color: var(--accent);
+  letter-spacing: 0.08em; text-transform: uppercase;
+  font-weight: 600; margin-bottom: 1.75rem;
+}
+.badge-dot {
+  width: 6px; height: 6px; background: var(--accent);
+  border-radius: 50%; animation: blink 2s infinite;
+}
+.h1 {
+  font-family: var(--font-h);
+  font-size: clamp(2.6rem, 6.5vw, 5rem);
+  font-weight: 800; letter-spacing: -0.04em;
+  line-height: 1.05; margin-bottom: 1.25rem;
+}
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,.2);
+}
+.green { color: var(--accent); }
+.sub {
+  color: var(--text2); font-size: 1rem;
+  max-width: 480px; margin: 0 auto 2.25rem;
+  font-weight: 300; line-height: 1.85;
+}
+.btns { display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; }
+.btn-p {
+  background: var(--accent); color: #000; border: none;
+  padding: 0.8rem 1.8rem; border-radius: 2rem;
+  font-family: var(--font-b); font-size: 0.9rem;
+  font-weight: 700; cursor: pointer; transition: all 0.2s;
+}
+.btn-p:hover {
+  background: #00ffb3; transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,229,160,.3);
+}
+.btn-o {
+  background: transparent; color: var(--text);
+  border: 1px solid var(--border2); padding: 0.8rem 1.8rem;
+  border-radius: 2rem; font-family: var(--font-b);
+  font-size: 0.9rem; font-weight: 500;
+  cursor: pointer; transition: all 0.2s;
+}
+.btn-o:hover {
+  border-color: var(--accent); color: var(--accent);
+  transform: translateY(-2px);
+}
